@@ -2,6 +2,8 @@ import style from './MainPage.module.css'
 import SliderAbility from "./SliderAbility";
 import Services from "./Services";
 import Goals from "./Goals";
+import SliderGoals from "./SliderGoals";
+import OurMission from "./OurMission";
 
 
 
@@ -16,8 +18,8 @@ const MainPage = () => {
             </div>
           <SliderAbility/>
             <Services/>
-            <Goals/>
-
+            <SliderGoals/>
+            <OurMission/>
         </div>
 
     );
