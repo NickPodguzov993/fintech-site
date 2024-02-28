@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import goals1 from '../../../fintech/public/images/goals1.png'
 import goals2 from '../../../fintech/public/images/goals2.png'
 import goals3 from '../../../fintech/public/images/goals3.png'
+import redSearch from '../../public/images/redSearch.svg'
 
 
 const OurMission = () => {
@@ -75,7 +76,11 @@ const OurMission = () => {
 
     return (
         <div className="fc gap-8 justify-start items-start w-full ">
-            <h2 className='text-[#FF1744] text-[48px] p-4'>Наша миссия и ценности</h2>
+            <div className='flex p-4'>
+                <h2 className=' text-[32px] '>Наша миссия и ценности</h2>
+                <img src={redSearch} />
+            </div>
+
             <p>Мы помогаем нашим клиентам оптимизировать свои бизнес-процессы, внедрять новые технологии и повышать эффективность работы</p>
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>

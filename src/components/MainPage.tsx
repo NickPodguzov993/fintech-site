@@ -4,7 +4,8 @@ import Services from "./Services";
 import Goals from "./Goals";
 import SliderGoals from "./SliderGoals";
 import OurMission from "./OurMission";
-
+import OurTeam from "./OurTeam";
+import OurHrPolitics from "./OurHrPolitics";
 
 
 
@@ -20,6 +21,8 @@ const MainPage = () => {
             <Services/>
             <SliderGoals/>
             <OurMission/>
+            <OurTeam/>
+            <OurHrPolitics/>
         </div>
 
     );
