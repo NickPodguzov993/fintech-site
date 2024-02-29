@@ -112,11 +112,9 @@ const OurHrPolitics = () => {
     return (
         <div className="fc gap-8 justify-start items-start w-full ">
             <div className='flex p-4'>
-                <h2 className=' text-[32px] '>Наша миссия и ценности</h2>
-                <img src={redSearch} />
+                <h2 className=' text-[32px] '>Наша HR-политика</h2>
             </div>
-
-            <p>Мы помогаем нашим клиентам оптимизировать свои бизнес-процессы, внедрять новые технологии и повышать эффективность работы</p>
+            
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
             <div className="sm:hidden w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">

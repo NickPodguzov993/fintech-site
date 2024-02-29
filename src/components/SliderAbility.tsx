@@ -1,6 +1,7 @@
 import {useState} from "react";
 import time from '../../../fintech/public/images/Frame211.png'
 import fintech from '../../../fintech/public/images/Frame214.svg'
+import rings from '../../../fintech/public/images/rings.svg'
 
 const SliderAbility = () => {
 
@@ -41,18 +42,12 @@ const SliderAbility = () => {
         },
         {
             id: 4,
-            block: <div style={{width: '100%', height: '100%', background: '#212121', borderRadius: 30, overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 38, display: 'inline-flex'}}>
-                <div style={{alignSelf: 'stretch', padding: 24, justifyContent: 'center', alignItems: 'center', gap: 12, display: 'inline-flex'}}>
-                    <div style={{flex: '1 1 0', color: 'white', fontSize: 27.43, fontFamily: 'Raleway', fontWeight: '500', wordWrap: 'break-word'}}>Оптимизируем  бизнес-процессы</div>
+            block: <div style={{width: '100%', height: '300px', background: '#212121', borderRadius: 30, overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 38, display: 'inline-flex'}}>
+                <div style={{alignSelf: 'stretch', padding: 15, justifyContent: 'center', alignItems: 'center', gap: 12, display: 'inline-flex'}}>
+                    <div style={{flex: '1 1 0', color: 'white', fontSize: 27.43, fontFamily: 'Raleway', fontWeight: '500', wordWrap: 'break-word'}}>Оптимизируем бизнес-процессы</div>
                 </div>
                 <div style={{width: 300, height: 150, position: 'relative'}}>
-                    <div style={{width: 75, height: 150, left: 0, top: 0, position: 'absolute', borderRadius: 200, border: '6.86px #FF8A80 solid'}} />
-                    <div style={{width: 75, height: 150, left: 37.50, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF1744 solid'}} />
-                    <div style={{width: 75, height: 150, left: 75, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF8A80 solid'}} />
-                    <div style={{width: 75, height: 150, left: 112.50, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF1744 solid'}} />
-                    <div style={{width: 75, height: 150, left: 150, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF8A80 solid'}} />
-                    <div style={{width: 75, height: 150, left: 187.50, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF1744 solid'}} />
-                    <div style={{width: 75, height: 150, left: 225, top: 0, position: 'absolute', borderRadius: 9999, border: '6.86px #FF8A80 solid'}} />
+                    <img src={rings}/>
                 </div>
             </div>
         }
@@ -84,7 +79,7 @@ const SliderAbility = () => {
         <div className="fc gap-8 justify-start items-start w-full ">
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
-            <div className="sm:hidden w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
+            <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
                 <div className="flex flex-row  px-4">
                     {cards.map(c => (
                         <div onTouchStart={() => touchStart(c.id)} onTouchEnd={() => touchEnd(c.id)}
