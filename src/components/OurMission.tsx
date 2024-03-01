@@ -111,7 +111,7 @@ const OurMission = () => {
             <p>Мы помогаем нашим клиентам оптимизировать свои бизнес-процессы, внедрять новые технологии и повышать эффективность работы</p>
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
-            <div className="sm:hidden w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
+            <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
                 <div className="flex flex-row  px-4">
                     {cards.map(c => (
                         <div onTouchStart={() => touchStart(c.id)} onTouchEnd={() => touchEnd(c.id)}

@@ -8,6 +8,7 @@ import OurHrPolitics from "./OurHrPolitics";
 import OurBonuses from "./OurBonuses";
 import OurLocation from "./OurLocation";
 import Maps from "./Maps";
+import Form from "./Form";
 
 
 
@@ -30,6 +31,8 @@ const MainPage = () => {
             <OurBonuses/>
             <OurLocation/>
            <Maps/>
+            <Form/>
+
 
 
 

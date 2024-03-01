@@ -34,3 +34,10 @@ svg {
     align-items: center;
 }
 
+.input {
+    @apply py-4 sm:py-8 px-8 bg-['#F5F5F5']  rounded-[30px] sm:rounded-[40px] border-none outline-none resize-none
+}
+.error_input {
+    @apply py-4 sm:py-8 px-8 bg-['#F5F5F5']  rounded-[30px] sm:rounded-[40px] border-none outline-none resize-none placeholder-rose-600
+}
+

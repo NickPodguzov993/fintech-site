@@ -1,9 +1,10 @@
 import logo from '../../../fintech/public/images/Logo.svg'
 import bigLogo from '../../../fintech/public/images/fintechblacktext.svg'
+import arrow from '../../../fintech/public/images/arrowBack.svg'
 
 const Footer = () => {
     return (
-        <div className=''>
+        <div className='relative'>
             <div
                 className="w-[360px] h-[520px] px-4 py-8 bg-neutral-100 rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
                 <div className="w-[110.84px] h-12 relative"><img src={logo} alt="logo"/></div>
@@ -37,16 +38,17 @@ const Footer = () => {
                         </div>
                         <div
                             className="w-10 h-10 p-2 bg-white rounded-[100px] justify-center items-center gap-2.5 flex">
-                            <div className="w-6 h-6 relative origin-top-left -rotate-180"></div>
+                            <div className="w-6 h-6 relative origin-top-left "><img src={arrow} /></div>
+                        </div>
+                        <div className='absolute top-[476px] right-[0px] w-full rounded-[30px] '>
+                            <img  src={bigLogo} className='rounded-b-[30px]' alt=""/>
                         </div>
                     </div>
                 </div>
 
 
             </div>
-            <div className='absolute'>
-                <img  src={bigLogo} alt=""/>
-            </div>
+
         </div>
     );
 }
