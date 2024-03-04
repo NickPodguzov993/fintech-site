@@ -74,7 +74,7 @@ const SliderGoals = () => {
     };
 
     return (
-        <div className="fc gap-8 justify-start items-start w-full ">
+        <div className="fc gap-8 justify-start items-start w-full sm:hidden">
             <h2 className='text-[#FF1744] text-[48px] p-4'>Наши цели</h2>
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>

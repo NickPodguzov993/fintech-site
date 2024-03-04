@@ -8,26 +8,23 @@ const OurBonuses = () => {
 
     const [open,setOpen] = useState(false)
 
+    const openCard = ()=> {
+        console.log('asdasdasdasd')
+       setOpen(!open)
+    }
+
     const initialData = [
         {
             id: 1,
             block:
                 <div>
-                    <div onClick={()=>{setOpen(!open)}}
+                    <div
                          className="w-[209px] h-[58px] px-6 py-4 bg-white rounded-[20px] border border-rose-600 justify-center items-center gap-2 inline-flex">
                         <div className="text-rose-600 text-base font-bold font-['Raleway'] leading-relaxed">01</div>
-                        <div className="text-rose-600 text-base font-medium font-['Raleway'] leading-normal">Медицина и ДМС</div>
+                        <div onClick={()=>{setOpen(!open)}} className="text-rose-600 text-base font-medium font-['Raleway'] leading-normal">Медицина и ДМС</div>
                     </div>
-                    {open && <div className="w-[328px] h-[181px] p-8 flex-col justify-start items-center gap-4 inline-flex">
-                        <div className="self-stretch text-zinc-900 text-xl font-bold font-['Raleway']">Кафетерий бенефитов</div>
-                        <div className="self-stretch text-zinc-900 text-base font-medium font-['Raleway'] leading-relaxed">Возмещение затрат на посещение спортивных секций или клубов</div>
-                    </div>}
-                    {/*<div onClick={showBonus}
-                        className="w-[209px] h-[58px] px-6 py-4 bg-white rounded-[20px] border border-rose-600 justify-center items-center gap-2 inline-flex">
-                        <div className="text-rose-600 text-base font-bold font-['Raleway'] leading-relaxed">01</div>
-                        <div className="text-rose-600 text-base font-medium font-['Raleway'] leading-normal">Медицина и ДМС</div>
-                    </div>
-                    <div className="w-[328px] h-[181px] p-8 flex-col justify-start items-center gap-4 inline-flex">
+                    {open && <div>12312312312312321</div>}
+                    {/*<div className="w-[328px] h-[181px] p-8 flex-col justify-start items-center gap-4 inline-flex">
                         <div className="self-stretch text-zinc-900 text-xl font-bold font-['Raleway']">Кафетерий бенефитов</div>
                         <div className="self-stretch text-zinc-900 text-base font-medium font-['Raleway'] leading-relaxed">Возмещение затрат на посещение спортивных секций или клубов</div>
                     </div>*/}
@@ -129,15 +126,13 @@ const OurBonuses = () => {
     };
 
     return (
-        <div className="fc gap-8 justify-start items-start w-full ">
+        <div className="fc gap-8 justify-start items-start w-full sm:hidden">
             <div className='flex p-4'>
                 <h2 className=' text-[32px] '>Наши бонусы</h2>
                 <img src={redSearch} />
             </div>
 
             <p>Для наших сотрудников мы разработали ценностное предложение, основанное на современных HR-методиках.</p>
-            <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
-            </div>
             <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
                 <div className="flex flex-row  px-4">
                     {cards.map(c => (
@@ -170,6 +165,7 @@ const OurBonuses = () => {
                     ))}
                 </div>
             </div>
+
         </div>
 
 
