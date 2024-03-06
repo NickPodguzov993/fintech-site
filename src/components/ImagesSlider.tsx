@@ -123,7 +123,7 @@ const ImagesSlider = () => {
                          hover:justify-between p-8 rounded-[30px] bg-cover bg-center h-[480px] w-[300px] hover:grayscale-0 bg-[url('/images/image3.jpg')]">
                         {isHovered3 ? <div
                             className="animate-fade animate-once animate-duration-300 animate-delay-100 animate-ease-linear animate-normal
-                             flex justify-end gap-2 duration-300 mb-[180px]">
+                             flex justify-end gap-2 duration-310 mb-[180px]">
 
                         </div> : <div
                             className="animate-fade animate-once animate-duration-300 animate-delay-100 animate-ease-linear text-white animate-normal
