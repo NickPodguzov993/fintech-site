@@ -12,6 +12,9 @@ import Form from "./Form";
 import figure from '../../public/images/Frame355.svg'
 import GoalsDesktop from "./GoalsDesktop";
 import BonusesDesktop from "./BonusesDesktop";
+import DesktopOurMission from "./DesktopOurMission";
+import DesctopOurTeam from "./DesctopOurTeam";
+import ImagesSlider from "./ImagesSlider";
 
 
 
@@ -38,11 +41,14 @@ const MainPage = () => {
             <SliderGoals/>
             <GoalsDesktop/>
             <OurMission/>
+            <DesktopOurMission/>
             <OurTeam/>
+            <DesctopOurTeam/>
             <OurHrPolitics/>
             <OurBonuses/>
             <BonusesDesktop/>
             <OurLocation/>
+            <ImagesSlider/>
            <Maps/>
             <Form/>
 

@@ -104,7 +104,7 @@ const OurLocation = () => {
     };
 
     return (
-        <div className="fc gap-8 justify-start items-start w-full ">
+        <div className="fc gap-8 justify-start items-start w-full sm:hidden">
             <div className='flex justify-between  p-4'>
                 <h2 className=' text-[32px] '>Мы в Ростове</h2>
                 <img src={redSearch} />

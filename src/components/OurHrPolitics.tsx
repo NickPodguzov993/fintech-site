@@ -7,7 +7,7 @@ const OurHrPolitics = () => {
     const initialData = [
         {
             id: 1,
-            block:  <div class="w-[300px] h-[290px]  flex-col justify-start items-start inline-flex">
+            block:  <div class="w-[300px] h-[290px] sm:w-[400px] sm:h-[402px]  flex-col justify-start items-start inline-flex">
                 <div class="self-stretch h-32 p-4 bg-neutral-100 rounded-tl-[30px] rounded-tr-[30px] flex-col justify-start items-start flex">
                     <div class="px-4 py-2 bg-white rounded-[20px] justify-center items-center gap-[100px] inline-flex">
                         <div class="text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Заработная</div>
@@ -27,7 +27,7 @@ const OurHrPolitics = () => {
         },
         {
             id: 2,
-            block:  <div class="w-[300px] h-[290px] flex-col justify-start items-start inline-flex">
+            block:  <div class="w-[300px] h-[290px] sm:w-[400px] sm:h-[402px] flex-col justify-start items-start inline-flex">
                 <div class="self-stretch h-32 p-4 bg-neutral-100 rounded-tl-[30px] rounded-tr-[30px] flex-col justify-start items-start flex">
                     <div class="px-4 py-2 bg-white rounded-[20px] justify-center items-center gap-[100px] inline-flex">
                         <div class="text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Реферальный</div>
@@ -47,7 +47,7 @@ const OurHrPolitics = () => {
         },
         {
             id: 3,
-            block:  <div class="w-[300px] h-[290px] flex-col justify-start items-start inline-flex">
+            block:  <div class="w-[300px] h-[290px] sm:w-[400px] sm:h-[402px] flex-col justify-start items-start inline-flex">
                 <div class="self-stretch h-32 p-4 bg-neutral-100 rounded-tl-[30px] rounded-tr-[30px] flex-col justify-start items-start flex">
                     <div class="px-4 py-2 bg-white rounded-[20px] justify-center items-center gap-[100px] inline-flex">
                         <div class="text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Кафетерий</div>
@@ -67,7 +67,7 @@ const OurHrPolitics = () => {
         },
         {
             id: 4,
-            block:  <div class="w-[300px] h-[290px] flex-col justify-start items-start inline-flex">
+            block:  <div class="w-[300px] h-[290px] sm:w-[400px] sm:h-[402px] flex-col justify-start items-start inline-flex">
                 <div class="self-stretch h-32 p-4 bg-neutral-100 rounded-tl-[30px] rounded-tr-[30px] flex-col justify-start items-start flex">
                     <div class="px-4 py-2 bg-white rounded-[20px] justify-center items-center gap-[100px] inline-flex">
                         <div class="text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Vel accumsan</div>
@@ -117,11 +117,11 @@ const OurHrPolitics = () => {
             
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
-            <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
+            <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden sm:overflow-y-scroll">
                 <div className="flex flex-row  px-4">
                     {cards.map(c => (
                         <div onTouchStart={() => touchStart(c.id)} onTouchEnd={() => touchEnd(c.id)}
-                             className="w-[300px]  h-[332px]  flex-col justify-between items-start inline-flex">
+                             className="w-[300px]  h-[332px] sm:w-[400px] sm:h-[402px] sm:  flex-col justify-between items-start inline-flex">
 
                             <div>
                                 {c.block}

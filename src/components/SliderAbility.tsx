@@ -82,7 +82,7 @@ const SliderAbility = () => {
     };
 
     return (
-        <div className="fc gap-8 justify-start items-start w-full sm:w-[1400px]">
+        <div className="fc gap-8 justify-start items-start w-full sm:w-[1440px] mx-auto">
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
             <div className=" w-full   justify-start items-start inline-flex flex-col overflow-y-hidden">

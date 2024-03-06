@@ -6,7 +6,7 @@ interface childrenProps {
 
 const Wrapper = ({children}: childrenProps) => {
     return (
-        <div className="min-h-screen flex flex-col mx-auto items-center max-w-[1400px] w-full">
+        <div className="min-h-screen flex flex-col mx-auto items-center max-w-[1600px] w-full">
             {children}
         </div>
     );
