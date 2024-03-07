@@ -1,27 +1,41 @@
 import {useState} from "react";
 import time from '../../../fintech/public/images/Frame211.png'
 import fintech from '../../../fintech/public/images/Frame214.svg'
-import rings from '../../../fintech/public/images/rings.svg'
+import search from '../../../fintech/public/images/searchMini.svg'
+import done from '../../../fintech/public/images/done.svg'
 
 const SliderAbility = () => {
 
     const initialData = [
         {
             id: 1,
-            block:  <div>
-                <div className="w-[300px] h-[150px] sm:w-[350px] sm:h-[175px] p-[27.43px] bg-neutral-800 rounded-[34.29px] justify-between items-center inline-flex">
+            block: <div>
+                <div className="w-[300px] h-[150px] sm:w-[350px] sm:h-[175px] p-[27.43px] bg-neutral-800 rounded-[34.29px] justify-between items-center
+                 inline-flex bg-no-repeat
+                         bg-[top_0px_right_-50px] bg-[url('/images/halfRing.svg')] relative" >
+
                     <div className="flex-col justify-center items-start inline-flex">
-                        <div className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Клиент</div>
-                        <div className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Задача</div>
+                        <div
+                            className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Клиент
+                        </div>
+                        <div
+                            className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Задача
+                        </div>
+                        <img className='absolute left-[230px]'  src={search}/>
                     </div>
-                    <div className="w-[205.71px] h-[205.71px] rounded-full border-8 border-black" />
-                    <div className="w-[41.14px] h-[41.14px] relative" />
                 </div>
-                <div className="w-[300px] h-[150px] sm:w-[350px] sm:h-[175px] p-[27.43px] bg-rose-600 rounded-[34.29px] justify-start items-center gap-[27.43px] inline-flex">
-                    <div className="w-[41.14px] h-[41.14px] relative" />
-                    <div className="flex-col justify-center items-start inline-flex">
-                        <div className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Финтех</div>
-                        <div className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Решение</div>
+                <div
+                    className="w-[300px] h-[150px] sm:w-[350px] sm:h-[175px] p-[27.43px] bg-rose-600 rounded-[34.29px] justify-start items-center gap-[27.43px] inline-flex">
+                    <div className="w-[41.14px] h-[41.14px] relative"/>
+                    <div className="flex-col justify-center items-start inline-flex ">
+                        <img className='absolute left-[40px]'  src={done}/>
+                        <div
+                            className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Финтех
+                        </div>
+                        <div
+                            className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Решение
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -30,7 +44,7 @@ const SliderAbility = () => {
 
             id: 2,
             block: <div>
-                <img  src={time} className='sm:w-[350px] sm:h-[350px]' alt=""/>
+                <img src={time} className='sm:w-[350px] sm:h-[350px]' alt=""/>
             </div>
 
         },
@@ -42,27 +56,25 @@ const SliderAbility = () => {
         },
         {
             id: 4,
-            block: <div class="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] bg-neutral-800 rounded-[35px] flex-col justify-center items-start gap-[43px] inline-flex">
+            block: <div class="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] bg-neutral-800 rounded-[35px] flex-col justify-center
+            items-start gap-[43px] inline-flex bg-no-repeat
+                         bg-bottom bg-[url('/images/rings.svg')]">
                 <div class="self-stretch p-7 justify-center items-center gap-3.5 inline-flex">
-                    <div class="grow shrink basis-0 text-white text-[32px] font-medium font-['Raleway']">Оптимизируем     бизнес-процессы</div>
+                    <div class="grow shrink basis-0 text-white text-[27px] font-medium font-['Raleway']">Оптимизируем
+                        бизнес-процессы
+                    </div>
                 </div>
                 <div class="w-[300px] h-[150px] sm:w-[350px] sm:h-[350px] relative">
-                    <div class="w-[87.50px] h-[175px] left-0 top-0 absolute rounded-full border-8 border-rose-400"></div>
-                    <div class="w-[87.50px] h-[175px] left-[43.75px] top-0 absolute rounded-full border-8 border-rose-600"></div>
-                    <div class="w-[87.50px] h-[175px] left-[87.50px] top-0 absolute rounded-full border-8 border-rose-400"></div>
-                    <div class="w-[87.50px] h-[175px] left-[131.25px] top-0 absolute rounded-full border-8 border-rose-600"></div>
-                    <div class="w-[87.50px] h-[175px] left-[175px] top-0 absolute rounded-full border-8 border-rose-400"></div>
-                    <div class="w-[87.50px] h-[175px] left-[218.75px] top-0 absolute rounded-full border-8 border-rose-600"></div>
-                    <div class="w-[87.50px] h-[175px] left-[262.50px] top-0 absolute rounded-full border-8 border-rose-400"></div>
+
                 </div>
             </div>
         }
     ]
     const [cards, setCards] = useState(initialData);
-    const touchStart = (id: number) : void => {
+    const touchStart = (id: number): void => {
         const updatedData = cards.map(c => {
             if (id === c.id) {
-                return { ...c, isHovered: true };
+                return {...c, isHovered: true};
             }
             return c;
         });
@@ -73,7 +85,7 @@ const SliderAbility = () => {
     const touchEnd = (id: number): void => {
         const updatedContent = cards.map(c => {
             if (id === c.id) {
-                return { ...c, isHovered: false };
+                return {...c, isHovered: false};
             }
             return c;
         });
@@ -99,8 +111,6 @@ const SliderAbility = () => {
                 </div>
             </div>
         </div>
-
-
 
 
     );

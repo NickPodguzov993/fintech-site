@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='relative'>
             <div
-                className="w-[360px] h-[520px] px-4 py-8 bg-neutral-100 rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
+                className="sm:hidden w-[360px] h-[520px] px-4 py-8 bg-neutral-100 rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
                 <div className="w-[110.84px] h-12 relative"><img src={logo} alt="logo"/></div>
                 <div className="self-stretch h-[312px] flex-col justify-start items-start gap-8 flex">
                     <div className="w-[195px] h-14 text-zinc-900 text-base font-medium font-['Mulish']">FinTech<br/>©
@@ -45,8 +45,29 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
-
+            </div>
+            <div className="hidden w-[1400px] h-[363px] p-8 bg-neutral-100 rounded-[40px] flex-col justify-start items-start gap-8 sm:inline-flex">
+                <div className="w-[110.84px] h-12 relative" />
+                <div className="self-stretch justify-between items-start inline-flex">
+                    <div className="w-[195px] self-stretch text-zinc-900 text-base font-medium font-['Mulish']">FinTech<br/>© 2024 All rights reserved </div>
+                    <div className="justify-start items-start flex">
+                        <div className="w-[97px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Главная</div>
+                        </div>
+                        <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Контакты</div>
+                        </div>
+                        <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Документы</div>
+                        </div>
+                    </div>
+                    <div className="w-[230px] pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
+                        <div className="text-white text-base font-bold font-['Raleway'] leading-relaxed">Связаться с нами</div>
+                        <div className="w-10 h-10 p-2 bg-white rounded-[100px] justify-center items-center gap-2.5 flex">
+                            <div className="w-6 h-6 relative origin-top-left -rotate-180" />
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

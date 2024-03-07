@@ -9,7 +9,7 @@ const SliderGoals = () => {
     const initialData = [
         {
             id: 1,
-            block:  <div class="w-[300px] h-[320px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
+            block:  <div class="w-[300px] h-[320px]  bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
                 <div class="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
                     <div class="self-stretch justify-start items-center gap-4 inline-flex">
                         <div class="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>

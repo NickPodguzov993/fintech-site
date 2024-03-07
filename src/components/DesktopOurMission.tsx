@@ -20,10 +20,8 @@ const DesktopOurMission = () => {
                 </div>
                 <div className="self-stretch h-[650px] flex-col justify-start items-center gap-4 flex">
                     <div className="self-stretch justify-center items-start gap-4 inline-flex">
-                        <div className="w-[456px] h-[480px] relative">
-                            <div className="w-[440px] h-[345.66px] left-[16px] top-[16px] absolute">
-
-                            </div>
+                        <div className="w-[456px] h-[480px] relative  bg-no-repeat
+                         bg-[top_75px_right_50px] bg-[url('/images/Union.svg')]">
                             <div className="h-[206px] p-8 left-0 top-[274px] absolute bg-neutral-100 bg-opacity-60 rounded-[40px] backdrop-blur-[20px] flex-col justify-start items-start gap-4 inline-flex">
                                 <div className="self-stretch text-zinc-900 text-[32px] font-medium font-['Raleway'] leading-[48px]">Экспертность</div>
                                 <div className="self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Мы аккумулируем полученный опыт и постоянно продолжаем учиться и развиваться. Рост  компетенций для нас приоритет.</div>
@@ -41,18 +39,14 @@ const DesktopOurMission = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grow shrink basis-0 h-[480px] p-8 bg-rose-600 rounded-[40px] flex-col justify-end items-start gap-4 inline-flex">
-                            <div className="w-[420px] h-[386.34px] relative">
+                        <div className="grow shrink basis-0 h-[480px] p-8 bg-rose-600 rounded-[40px] flex-col justify-end items-start gap-4 inline-flex bg-no-repeat
+                         bg-[top_-75px_right_60px] bg-[url('/images/figureForMission.svg')]">
 
-                            </div>
-                            <div className="self-stretch text-white text-[32px] font-medium font-['Raleway'] leading-[48px]">Инновационность  подходов</div>
+                            <div className="self-stretch text-white text-[32px] font-medium font-['Raleway'] leading-[48px]">Инновационность подходов</div>
                             <div className="self-stretch text-white text-base font-bold font-['Raleway'] leading-relaxed">Мы стремимся найти принципиально новые варианты решений, смотреть шире и пробовать, тестировать гипотезы.</div>
                         </div>
                     </div>
                     <div className="self-stretch h-[154px] p-8 bg-neutral-100 rounded-[40px] flex-col justify-start items-start gap-4 flex">
-                        <div className="origin-top-left rotate-[150deg] w-[596.55px] h-[468.64px] relative">
-
-                        </div>
                         <div className="self-stretch text-zinc-900 text-[32px] font-medium font-['Raleway'] leading-[48px]">Клиентоориентированность</div>
                         <div className="self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Мы работаем для наших клиентов и партнеров, поэтому их интересы = наши интересы.</div>
                     </div>

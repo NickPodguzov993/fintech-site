@@ -3,7 +3,7 @@ import React from 'react';
 const BonusesDesktop = () => {
     return (
 
-        <div className="w-[1400px] h-24 justify-center items-center gap-16 inline-flex">
+        <div className="hidden sm:inline-flex w-[1400px] h-24 justify-center items-center gap-16 ">
             <div className="grow shrink basis-0 h-24 justify-start items-center gap-8 flex">
                 <div className="text-zinc-900 text-[64px] font-medium font-['Raleway']">Наши бонусы</div>
                 <div className="p-6 bg-rose-600 rounded-[30px] justify-start items-center gap-2.5 flex">

@@ -11,20 +11,18 @@ const OurMission = () => {
     const initialData = [
         {
             id: 1,
-            block:  <div className="w-[300px] h-[480px] relative">
-                <div className="w-[440px] h-[345.66px] absolute  left-[16px] top-[46px] ">
-                    <img src={union} />
-                </div>
+            block:  <div className="w-[300px] h-[480px] relative  bg-no-repeat
+                         bg-[top_75px_right_-120px] bg-[url('/images/Union.svg')]">
                 <div className="h-[196px] p-8 left-0 top-[284px] absolute bg-neutral-100 bg-opacity-60 rounded-[40px] backdrop-blur-[20px] flex-col justify-start items-start gap-2 inline-flex">
                     <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Экспертность</div>
-                    <div className="self-stretch text-zinc-900 text-sm font-bold font-['Raleway'] leading-snug">Мы аккумулируем полученный опыт и постоянно продолжаем учиться и развиваться. Рост  компетенций для нас приоритет.</div>
+                    <div className="self-stretch text-zinc-900 text-sm font-bold font-['Raleway'] leading-snug">Мы аккумулируем полученный опыт и постоянно продолжаем учиться и развиваться. Рост компетенций для нас приоритет.</div>
                 </div>
             </div>
 
         },
         {
             id: 2,
-            block: <div className="w-[300px] h-[480px] flex-col justify-start items-center  inline-flex ">
+            block: <div className="w-[300px] h-[480px] flex-col justify-start gap-1 items-center  inline-flex ">
                 <div
                     className="self-stretch grow shrink basis-0 p-8 bg-neutral-100 rounded-[40px] z-40 flex-col justify-start items-start gap-2 flex">
                     <div
@@ -53,7 +51,8 @@ const OurMission = () => {
         {
             id: 3,
             block: <div
-                className="w-[300px] h-[480px] p-8 bg-rose-600 rounded-[40px] flex-col justify-end items-start gap-2 inline-flex relative">
+                className="w-[300px] h-[480px] p-8 bg-rose-600 rounded-[40px] flex-col justify-end items-start gap-2 inline-flex relative
+                bg-[top_-135px_right_-40px] bg-no-repeat bg-[url('/images/figureForMission.svg')]">
 
                 <div className="self-stretch text-white text-2xl font-medium font-['Raleway'] leading-9">Инновационность
                     подходов
@@ -65,7 +64,7 @@ const OurMission = () => {
 
         },
         {
-            id: 3,
+            id: 4,
             block: <div
                 className="w-[300px] h-[480px] p-8 bg-neutral-100 rounded-[40px] flex-col justify-start items-start gap-4 inline-flex">
                 <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Ориентация
