@@ -15,44 +15,56 @@ import BonusesDesktop from "./BonusesDesktop";
 import DesktopOurMission from "./DesktopOurMission";
 import DesctopOurTeam from "./DesctopOurTeam";
 import ImagesSlider from "./ImagesSlider";
-
-
+import {ContactForm} from "./ContactForm";
 
 
 const MainPage = () => {
     return (
-        <div className='overflow-y-hidden w-full sm:pt-[160px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] bg-white'>
-            <div className='hidden sm:flex'>
+        <div
+            className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] bg-white'>
+            <div className='hidden sm:flex  w-[1400px]'>
 
-                    <img src={figure}  className='w-[400px]' alt=""/>
+                <img src={figure} className='w-[400px]' alt=""/>
+                <h1 className='hidden sm:flex'>
+                    <div className=" inline-flex grow shrink basis-0 flex-col justify-center items-end w-full">
+                        <div className="self-stretch"><span
+                            className="text-zinc-900 text-[64px] font-medium font-['Raleway']">Оказываем </span><span
+                            className="text-rose-600 text-[64px] font-medium font-['Raleway']">спектр услуг</span></div>
+                        <div className="px-8 bg-neutral-100 rounded-[80px] justify-start items-start inline-flex  ml-[173.5px]">
+                            <div className="text-right text-zinc-900 text-[64px] font-medium font-['Raleway'] self-end">в сфере
+                                сопровождения
+                            </div>
+                        </div>
+                        <div className="self-stretch"><span
+                            className="text-zinc-900 text-[64px] font-medium font-['Raleway']">деятельности </span><span
+                            className="text-rose-600 text-[64px] font-medium font-['Raleway']">it-компаний</span></div>
+                    </div>
+                </h1>
 
-
-                <h1 className='p-8 text-[40px] leading-[46px] m-auto mt-[52px] sm:text-[64px]'>Оказываем <span className={style.span}>спектр услуг </span>
-                    в сфере сопровождения деятельности <span className={style.span}> it-компаний</span> </h1>
 
 
             </div>
-                <h1 className='p-8 text-[40px] leading-[46px] m-auto mt-[52px] sm:hidden'>Оказываем <br/> <span className={style.span}>спектр услуг </span>
-                    в<br/> сфере<br/> сопровождения<br/> деятельности<br/> <span className={style.span}> it-компаний</span> </h1>
+            <h1 className='p-8 text-[40px] leading-[46px] m-auto mt-[52px] sm:hidden'>Оказываем <br/> <span
+                className={style.span}>спектр услуг </span>
+                в<br/> сфере<br/> сопровождения<br/> деятельности<br/> <span className={style.span}> it-компаний</span>
+            </h1>
 
 
-          <SliderAbility/>
+            <SliderAbility/>
             <Services/>
             <SliderGoals/>
             <GoalsDesktop/>
             <OurMission/>
             <DesktopOurMission/>
             <OurTeam/>
-            <DesctopOurTeam/>
             <OurHrPolitics/>
             <OurBonuses/>
             <BonusesDesktop/>
             <OurLocation/>
             <ImagesSlider/>
-           <Maps/>
+            <Maps/>
             <Form/>
-
-
+            <ContactForm/>
 
 
         </div>

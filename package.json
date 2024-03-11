@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@types/aos": "^3.0.7",
     "@types/node-sass": "^4.11.7",
     "@types/nodemailer": "^6.4.14",

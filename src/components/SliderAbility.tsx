@@ -21,14 +21,14 @@ const SliderAbility = () => {
                         <div
                             className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Задача
                         </div>
-                        <img className='absolute left-[230px]'  src={search}/>
+                        <img className='absolute left-[270px]'  src={search}/>
                     </div>
                 </div>
                 <div
                     className="w-[300px] h-[150px] sm:w-[350px] sm:h-[175px] p-[27.43px] bg-rose-600 rounded-[34.29px] justify-start items-center gap-[27.43px] inline-flex">
                     <div className="w-[41.14px] h-[41.14px] relative"/>
                     <div className="flex-col justify-center items-start inline-flex ">
-                        <img className='absolute left-[40px]'  src={done}/>
+                        <img className='absolute left-[80px]'  src={done}/>
                         <div
                             className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Финтех
                         </div>

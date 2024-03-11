@@ -1,4 +1,4 @@
-
+import search from '../../public/images/bigSearsh.svg'
 
 const DesktopOurMission = () => {
     return (
@@ -9,7 +9,7 @@ const DesktopOurMission = () => {
                         <div className="self-stretch justify-start items-center gap-8 inline-flex">
                             <div className="text-zinc-900 text-[64px] font-medium font-['Raleway']">Наша миссия</div>
                             <div className="p-6 bg-neutral-100 rounded-[30px] justify-start items-center gap-2.5 flex">
-                                <div className="w-12 h-12 relative" />
+                                <div className="w-12 h-12 relative" ><img src={search} /></div>
                             </div>
                         </div>
                         <div className="self-stretch text-right text-zinc-900 text-[64px] font-medium font-['Raleway']">и ценности</div>
