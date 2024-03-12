@@ -1,18 +1,19 @@
 import { NavLink } from "react-router-dom";
 import logo from '../../../public/images/Logo.svg'
 import arrowRight from '../../../public/images/arrowRight.svg'
+import React from "react";
 
-const DesktopHeader = () => {
+export type ThemeType = {
+    theme: string
+    switchTheme?: () => void
+}
+
+
+const DesktopHeader = ({theme,switchTheme}:ThemeType) => {
+
     return (
         <>
-          {/*  <div className='w-full hidden sm:flex'>
-                <img className='p-4' src={logo} alt="logo"/>
-                <div>Контакты</div>
-                <div>Документы</div>
-                <div >button</div>
-                <img src="" alt="theme image"/>
-            </div>*/}
-            <div className="w-[1440px] hidden sm:inline-flex h-20 p-4 bg-white bg-opacity-90 justify-between items-center">
+            <div  className="w-[1440px] hidden sm:inline-flex h-20 p-4  bg-opacity-90 justify-between items-center">
                 <NavLink exact activeClassName="active" to="/">
                     <img className='p-4' src={logo} alt="logo"/>
                 </NavLink>
@@ -21,14 +22,21 @@ const DesktopHeader = () => {
                     <div className="justify-start items-start gap-4 flex">
                         <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
                             <NavLink exact activeClassName="active" to="/contacts">
-                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2">Контакты</div>
+                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
+                                     style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты</div>
                             </NavLink>
                         </div>
                         <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
                             <NavLink exact activeClassName="active" to="/policies">
-                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2">Документы</div>
+                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
+                                     style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы</div>
                             </NavLink>
 
+                        </div>
+                        <input onChange={switchTheme}  type="checkbox" id="toggle-btn" />
+                        <div className="toggle-container">
+                            <input onChange={switchTheme} type="checkbox" id="toggle-btn" />
+                            <label htmlFor="toggle-btn" className="toggle-label"></label>
                         </div>
                         <div className="w-[243px] h-10 self-stretch pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
                             <div className="text-white text-base font-bold font-['Raleway'] leading-relaxed">Отправить резюме</div>
@@ -36,6 +44,7 @@ const DesktopHeader = () => {
                                 <img src={arrowRight}/>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

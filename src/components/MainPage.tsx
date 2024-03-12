@@ -13,34 +13,38 @@ import figure from '../../public/images/Frame355.svg'
 import GoalsDesktop from "./GoalsDesktop";
 import BonusesDesktop from "./BonusesDesktop";
 import DesktopOurMission from "./DesktopOurMission";
-import DesctopOurTeam from "./DesctopOurTeam";
 import ImagesSlider from "./ImagesSlider";
 import {ContactForm} from "./ContactForm";
+import {ThemeType} from "./Wrapper/DesktopHeader";
 
 
-const MainPage = () => {
+const MainPage = ({theme}: ThemeType) => {
     return (
         <div
-            className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] bg-white'>
+            className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] '>
             <div className='hidden sm:flex  w-[1400px]'>
 
                 <img src={figure} className='w-[400px]' alt=""/>
                 <h1 className='hidden sm:flex'>
                     <div className=" inline-flex grow shrink basis-0 flex-col justify-center items-end w-full">
                         <div className="self-stretch"><span
-                            className="text-zinc-900 text-[64px] font-medium font-['Raleway']">Оказываем </span><span
+                            className="text-zinc-900 text-[64px] font-medium font-['Raleway'] "
+                            style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Оказываем </span><span
                             className="text-rose-600 text-[64px] font-medium font-['Raleway']">спектр услуг</span></div>
-                        <div className="px-8 bg-neutral-100 rounded-[80px] justify-start items-start inline-flex  ml-[173.5px]">
-                            <div className="text-right text-zinc-900 text-[64px] font-medium font-['Raleway'] self-end">в сфере
+                        <div
+                            className="px-8 bg-neutral-100 rounded-[80px] justify-start items-start inline-flex  ml-[173.5px]"
+                            style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
+                            <div className="text-right text-zinc-900 text-[64px] font-medium font-['Raleway'] self-end"
+                                 style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>в сфере
                                 сопровождения
                             </div>
                         </div>
                         <div className="self-stretch"><span
-                            className="text-zinc-900 text-[64px] font-medium font-['Raleway']">деятельности </span><span
+                            className="text-zinc-900 text-[64px] font-medium font-['Raleway']"
+                            style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>деятельности </span><span
                             className="text-rose-600 text-[64px] font-medium font-['Raleway']">it-компаний</span></div>
                     </div>
                 </h1>
-
 
 
             </div>
@@ -51,17 +55,17 @@ const MainPage = () => {
 
 
             <SliderAbility/>
-            <Services/>
+            <Services theme={theme}/>
             <SliderGoals/>
-            <GoalsDesktop/>
+            <GoalsDesktop theme={theme}/>
             <OurMission/>
-            <DesktopOurMission/>
-            <OurTeam/>
-            <OurHrPolitics/>
+            <DesktopOurMission theme={theme}/>
+            <OurTeam theme={theme}/>
+            <OurHrPolitics theme={theme}/>
             <OurBonuses/>
-            <BonusesDesktop/>
+            <BonusesDesktop theme={theme}/>
             <OurLocation/>
-            <ImagesSlider/>
+            <ImagesSlider theme={theme}/>
             <Maps/>
             <Form/>
             <ContactForm/>

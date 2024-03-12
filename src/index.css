@@ -41,3 +41,52 @@ svg {
     @apply py-4 sm:py-8 px-8 bg-['#F5F5F5']  rounded-[30px] sm:rounded-[40px] border-none outline-none resize-none placeholder-rose-600
 }
 
+.toggle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-label {
+    display: block;
+    width: 40px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #131111;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+
+
+#toggle-btn {
+    display: none;
+}
+
+#toggle-btn:checked + .toggle-label::before {
+    transform: translateX(16px);
+}
+
+#toggle-btn:checked ~ #sun {
+    display: none;
+}
+
+#toggle-btn:checked ~ #moon {
+    display: block;
+}
+
+.toggle-label:hover {
+    background-color: #e48989;
+}
+
+#light {
+    background-color: white;
+}
+
+#dark {
+    background-color: #131111;
+}
+

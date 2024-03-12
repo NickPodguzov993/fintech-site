@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import {ThemeType} from "./Wrapper/DesktopHeader";
 
-const ImagesSlider = () => {
+const ImagesSlider = ({theme}:ThemeType) => {
     const [isHovered1, setIsHovered1] = useState<boolean>(false)
     const [isHovered2, setIsHovered2] = useState<boolean>(false)
     const [isHovered3, setIsHovered3] = useState<boolean>(false)
@@ -66,11 +67,11 @@ const ImagesSlider = () => {
                                  animate-fade-up animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal">
                                         <p className="animate-fade-down animate-once animate-duration-300 animate-delay-[800ms] animate-ease-linear animate-normal
                                     justify-end text-[#1B1B1B] text-base sm:text-xl duration-300 text-2xl
-                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed">
+                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                             Уютный и просторный офис
                                         </p>
                                         <span
-                                            className="hover-span">
+                                            className="hover-span"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                 Здесь все создано для удобства сотрудников: просторные помещения, современная техника, удобная мебель
                                     </span>
                                     </div>
@@ -102,11 +103,11 @@ const ImagesSlider = () => {
                                  animate-fade-up animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal">
                                         <p className="
                                     justify-end text-[#1B1B1B] text-base sm:text-xl duration-300 text-2xl
-                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed">
+                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                             Уютный и просторный офис
                                         </p>
                                         <span
-                                            className="hover-span">
+                                            className="hover-span"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                 Здесь все создано для удобства сотрудников: просторные помещения, современная техника, удобная мебель
                                     </span>
                                     </div> :
@@ -138,11 +139,11 @@ const ImagesSlider = () => {
                                   animate-fade-up animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal">
                                         <p className="animate-fade-down animate-once animate-duration-300 animate-delay-[800ms] animate-ease-linear animate-normal
                                     justify-end text-[#1B1B1B] text-base sm:text-xl duration-300 text-2xl
-                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed">
+                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                             Уютный и просторный офис
                                         </p>
                                         <span
-                                            className="hover-span">
+                                            className="hover-span"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                 Здесь все создано для удобства сотрудников: просторные помещения, современная техника, удобная мебель
                                     </span>
                                     </div>:
@@ -174,11 +175,11 @@ const ImagesSlider = () => {
                                   animate-fade-up animate-once animate-duration-300 animate-delay-200 animate-ease-linear animate-normal">
                                         <p className="animate-fade-down animate-once animate-duration-300 animate-delay-[800ms] animate-ease-linear animate-normal
                                     justify-end text-[#1B1B1B] text-base sm:text-xl duration-300 text-2xl
-                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed">
+                                    font-medium font-['Raleway'] leading-9 sm:leading-loose leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                             Уютный и просторный офис
                                         </p>
                                         <span
-                                            className="hover-span">
+                                            className="hover-span"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
                                 Здесь все создано для удобства сотрудников: просторные помещения, современная техника, удобная мебель
                                     </span>
                                     </div> :

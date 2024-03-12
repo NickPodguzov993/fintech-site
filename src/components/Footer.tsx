@@ -1,34 +1,35 @@
 import logo from '../../../fintech/public/images/Logo.svg'
 import bigLogo from '../../../fintech/public/images/fintechblacktext.svg'
 import arrow from '../../../fintech/public/images/arrowBack.svg'
+import {ThemeType} from "./Wrapper/DesktopHeader";
 
-const Footer = () => {
+const Footer = ({theme}:ThemeType) => {
     return (
         <div className='relative'>
             <div
-                className="sm:hidden w-[360px] h-[520px] px-4 py-8 bg-neutral-100 rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
+                className="sm:hidden w-[360px] h-[520px] px-4 py-8  rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
                 <div className="w-[110.84px] h-12 relative"><img src={logo} alt="logo"/></div>
                 <div className="self-stretch h-[312px] flex-col justify-start items-start gap-8 flex">
-                    <div className="w-[195px] h-14 text-zinc-900 text-base font-medium font-['Mulish']">FinTech<br/>©
+                    <div className="w-[195px] h-14 text-zinc-900 text-base font-medium font-['Mulish']"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>FinTech<br/>©
                         2024 All rights reserved
                     </div>
                     <div className="flex-col justify-start items-start flex">
                         <div
                             className="self-stretch h-12 px-4 rounded-[50px] justify-start items-center gap-2 inline-flex">
                             <div
-                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Главная
+                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Главная
                             </div>
                         </div>
                         <div
                             className="self-stretch h-12 px-4 rounded-[50px] justify-start items-center gap-2 inline-flex">
                             <div
-                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Контакты
+                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты
                             </div>
                         </div>
                         <div
                             className="self-stretch h-12 px-4 rounded-[50px] justify-start items-center gap-2 inline-flex">
                             <div
-                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Документы
+                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы
                             </div>
                         </div>
                     </div>
@@ -46,19 +47,19 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden w-[1400px] h-[363px] p-8 bg-neutral-100 rounded-[40px] flex-col justify-start items-start gap-8 sm:inline-flex">
+            <div className="hidden w-[1400px] h-[363px] p-8  rounded-[40px] flex-col justify-start items-start gap-8 sm:inline-flex" style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
                 <div className="w-[110.84px] h-12 relative" />
                 <div className="self-stretch justify-between items-start inline-flex">
-                    <div className="w-[195px] self-stretch text-zinc-900 text-base font-medium font-['Mulish']">FinTech<br/>© 2024 All rights reserved </div>
+                    <div className="w-[195px] self-stretch text-zinc-900 text-base font-medium font-['Mulish']"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>FinTech<br/>© 2024 All rights reserved </div>
                     <div className="justify-start items-start flex">
                         <div className="w-[97px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Главная</div>
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Главная</div>
                         </div>
                         <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Контакты</div>
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты</div>
                         </div>
                         <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed">Документы</div>
+                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы</div>
                         </div>
                     </div>
                     <div className="w-[230px] pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
