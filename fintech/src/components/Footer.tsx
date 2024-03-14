@@ -2,10 +2,11 @@ import logo from '../../../fintech/public/images/Logo.svg'
 import bigLogo from '../../../fintech/public/images/fintechblacktext.svg'
 import arrow from '../../../fintech/public/images/arrowBack.svg'
 import {ThemeType} from "./DesktopHeader";
+import BigLogo from "./svg/BigLogo";
 
 const Footer = ({theme}:ThemeType) => {
     return (
-        <div className='relative'>
+        <div className='relative mb-[120px]'>
             <div
                 className="sm:hidden w-[360px] h-[520px] px-4 py-8  rounded-[30px] flex-col justify-start items-start gap-8 inline-flex mb-[120px]">
                 <div className="w-[110.84px] h-12 relative"><img src={logo} alt="logo"/></div>
@@ -65,10 +66,11 @@ const Footer = ({theme}:ThemeType) => {
                     <div className="w-[230px] pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
                         <div className="text-white text-base font-bold font-['Raleway'] leading-relaxed">Связаться с нами</div>
                         <div className="w-10 h-10 p-2 bg-white rounded-[100px] justify-center items-center gap-2.5 flex">
-                            <div className="w-6 h-6 relative origin-top-left -rotate-180" />
+                            <div className="w-6 h-6 relative origin-top-left -rotate-180" ></div>
                         </div>
                     </div>
                 </div>
+                <div className='absolute top-[225px] left-[100px]'><BigLogo theme={theme}/></div>
             </div>
 
         </div>

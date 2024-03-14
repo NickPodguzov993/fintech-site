@@ -128,3 +128,11 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+
+.back {
+    @apply self-stretch h-[154px] p-8  rounded-[40px] flex-col justify-start items-start gap-4 flex
+    bg-[url('/images/Union.svg')] bg-no-repeat
+    bg-[top_5px_right_50px] ;
+
+}
+

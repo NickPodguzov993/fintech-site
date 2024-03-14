@@ -36,19 +36,11 @@ const DesktopOurMission = ({theme}: ThemeType) => {
                     <div className="self-stretch justify-center items-start gap-4 inline-flex">
                         <div className="w-[456px] h-[480px] relative  bg-no-repeat
                          bg-[top_75px_right_50px] bg-[url('/images/Union.svg')]">
-                            <div
-                                className="h-[206px] p-8 left-0 top-[274px] absolute  bg-opacity-60 rounded-[40px] backdrop-blur-[20px] flex-col justify-start items-start gap-4 inline-flex"
-                                style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
-                                <div
-                                    className="self-stretch text-zinc-900 text-[32px] font-medium font-['Raleway'] leading-[48px]"
-                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Экспертность
-                                </div>
-                                <div
-                                    className="self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"
-                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Мы
-                                    аккумулируем полученный опыт и постоянно продолжаем учиться и развиваться. Рост
-                                    компетенций для нас приоритет.
-                                </div>
+                            <div className={`${theme === 'light' ? 'bg-neutral-100' : 'bg-neutral-800'}h-[206px] p-8 left-0 top-[274px] absolute  bg-opacity-60 
+                            rounded-[40px] backdrop-blur-[20px] flex-col justify-start items-start gap-4 inline-flex`}>
+                                <div className="self-stretch text-zinc-900 text-[32px] font-medium font-['Raleway'] leading-[48px]" style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Экспертность</div>
+                                <div className="self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed" style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
+                                    Мы аккумулируем полученный опыт и постоянно продолжаем учиться и развиваться. Рост компетенций для нас приоритет.</div>
                             </div>
                         </div>
                         <div
@@ -99,7 +91,7 @@ const DesktopOurMission = ({theme}: ThemeType) => {
                         </div>
                     </div>
                     <div
-                        className="self-stretch h-[154px] p-8  rounded-[40px] flex-col justify-start items-start gap-4 flex"
+                        className='back'
                         style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
                         <div
                             className="self-stretch text-zinc-900 text-[32px] font-medium font-['Raleway'] leading-[48px]"

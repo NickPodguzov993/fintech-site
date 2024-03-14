@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import  {useState} from "react";
 import goals1 from '../../../fintech/public/images/goals1.png'
 import goals2 from '../../../fintech/public/images/goals2.png'
 import goals3 from '../../../fintech/public/images/goals3.png'

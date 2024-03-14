@@ -9,12 +9,10 @@ import OurBonuses from "./OurBonuses";
 import OurLocation from "./OurLocation";
 import Maps from "./Maps";
 import Form from "./Form";
-import figure from '../../public/images/Frame355.svg'
 import GoalsDesktop from "./GoalsDesktop";
 import BonusesDesktop from "./BonusesDesktop";
 import DesktopOurMission from "./DesktopOurMission";
 import ImagesSlider from "./ImagesSlider";
-import {ContactForm} from "./ContactForm";
 import {ThemeType} from "./DesktopHeader";
 import MainFigure from "./svg/MainFigure";
 
@@ -24,9 +22,8 @@ const MainPage = ({theme}: ThemeType) => {
         <div
             className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] '>
             <div className='hidden sm:flex  w-[1400px]'>
+                <div className='mt-[20px]'> <MainFigure theme={theme}/></div>
 
-               {/* <img src={figure} className='w-[400px]' alt=""/>*/}
-                <MainFigure theme={theme}/>
                 <h1 className='hidden sm:flex'>
                     <div className=" inline-flex grow shrink basis-0 flex-col justify-center items-end w-full">
                         <div className="self-stretch"><span
