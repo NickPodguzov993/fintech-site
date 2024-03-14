@@ -1,34 +1,65 @@
-import React, {useEffect, useState} from 'react';
+import  {useEffect, useState} from 'react';
 import heart from '../../public/images/heart.svg'
 import BonusComponent from "./BonusComponent";
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 import BonusDescription from "./BonusDescription";
+import dms from '../../public/images/dms.jpg'
+import ball from '../../public/images/ball.png'
+import education from '../../public/images/education.jpg'
+import gift from '../../public/images/gift.jpg'
+import events from '../../public/images/events.jpg'
+import save from '../../public/images/save.jpg'
+import help from '../../public/images/help.jpg'
+import dinners from '../../public/images/dinners.jpg'
+import learnEnglish from '../../public/images/learnEnglish.jpg'
 
 const superObj = {
-'01' : {
-    title: 'dms',
-    description: 'sdfdsfdsg'
-},
-    '02' : {
-        title: 'bonuses',
-        description: 'sdfdsfdsg'
+    '01': {
+        title: 'Медицина и ДМС',
+        description: 'У нас действуют специальные условия ДМС для работников',
+        img: dms
+
     },
-    '03' : {
-        title: 'kek1',
-        description: 'sdfdsfddcsssssssssssssssssg'
+    '02': {
+        title: 'Кафетерий бенефитов',
+        description: 'Возмещение затрат на посещение спортивных секций или клубов',
+        img: ball
     },
-    '04' : {
-        title: 'bonuses2',
-        description: 'sdfdsfdsg'
+    '03': {
+        title: 'Обучение и развитие',
+        description: 'Мы предоставляем нашим сотрудникам возможность проходить различные тренинги и курсы, которые помогают им улучшить свои профессиональные навыки',
+        img: education
     },
-    '05' : {
-        title: 'kek3',
-        description: 'sdfdsfdsg'
+    '04': {
+        title: 'Подарки сотрудникам',
+        description: 'День рождения сотрудника, семейные торжества (день рождения ребенка, свадьба, подарок ко дню ухода в отпуск по беременности и родам - Baby-box',
+        img: gift
     },
-    '06' : {
-        title: 'kek4',
-        description: 'sdfdsfdsg'
-    }
+    '05': {
+        title: 'Корпоративные мероприятия',
+        description: 'День защитника Отечества, Международный женский день, День рождения компании, Family day, Children\'s day, Празднование Нового года',
+        img: events
+    },
+    '06': {
+        title: 'Страхование',
+        description: 'Финансовая поддержка с банком-партнером',
+        img: save
+    },
+    '07': {
+        title: 'Материальная помощь',
+        description: 'В жизни могут происходить самые разные обстоятельства, мы это прекрасно понимаем и потому мы готовы помочь сотрудникам, которые оказались в затруднительной ситуации',
+        img: help
+    },
+    '08': {
+        title: 'Happy hours',
+        description: 'Каждый четверг у нас «Happy hours». Организовываем вкусный обед или перекус для всех сотрудников Компании.',
+        img: dinners
+    },
+    '09': {
+        title: 'Изучение английского языка',
+        description: 'Корпоративный английский. Организовываем занятия несколько раз в неделю.',
+        img: learnEnglish
+    },
 }
 
 
@@ -36,22 +67,21 @@ const BonusesDesktop = ({theme}: ThemeType) => {
     const [index, setIndex] = useState('01')
     const [isClicked, setIsClicked] = useState(false)
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        if(isClicked){
-           setIsClicked(false)
+        if (isClicked) {
+            setIsClicked(false)
         } else {
-            const interval = window.setInterval(()=>{
-                // const min = Math.ceil(min);
-                const  max = Math.floor(Object.keys(superObj).length + 1);
+            const interval = window.setInterval(() => {
+                const max = Math.floor(Object.keys(superObj).length + 1);
 
                 setIndex(`0${Math.floor(Math.random() * (max - 1) + 1)}`)
 
-            },  7000, )
+            }, 7000,)
 
             return () => clearInterval(interval)
         }
-    },[isClicked])
+    }, [isClicked])
 
     const handleClick = (key) => {
         setIndex(key)
@@ -74,42 +104,12 @@ const BonusesDesktop = ({theme}: ThemeType) => {
                     ценностное предложение, основанное на современных HR-методиках.
                 </div>
             </div>
-
             <div className='flex'>
-                {/*<div>
-                    <div className="grow shrink basis-0 flex-col justify-start items-start gap-8 inline-flex absolute ">
-                        <div
-                            className="self-stretch bg-neutral-100 rounded-[40px] justify-center items-start inline-flex">
-                            <img className="grow shrink basis-0 self-stretch p-4 rounded-[40px]" src=""/>
-                            <div
-                                className="grow shrink basis-0 p-8 flex-col justify-start items-center gap-4 inline-flex">
-                                <div className="self-stretch text-zinc-900 text-xl font-bold font-['Raleway']">ss</div>
-                                <div
-                                    className="self-stretch text-zinc-900 text-base font-medium font-['Raleway'] leading-relaxed"
-                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Возмещение затрат на
-                                    посещение спортивных секций или клубов
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>*/}
-
-                <BonusDescription config={superObj[index]}/>
-
+                <BonusDescription config={superObj[index]} theme={theme}/>
                 <div className='flex flex-wrap w-[668px] ml-[720px] mt-[40px] '>
-                    {Object.entries(superObj).map(([key,value])=> (
-                        <BonusComponent onClick={()=>handleClick(key)} num={key} title={value.title} theme={theme}/>))}
-
-                  {/*  <BonusComponent theme={theme} num={'01'} title={'Медицина и ДМС'}/>
-                    <BonusComponent theme={theme} num={'02'} title={'Кафетерий бенефитов'}/>
-                    <BonusComponent theme={theme} num={'03'} title={'Обучение и развитие'}/>
-                    <BonusComponent theme={theme} num={'04'} title={'Подарки сотрудникам'}/>
-                    <BonusComponent theme={theme} num={'05'} title={'Корпоративные мероприятия'}/>
-                    <BonusComponent theme={theme} num={'06'} title={'Страхование'}/>
-                    <BonusComponent theme={theme} num={'07'} title={'Материальная помощь'}/>
-                    <BonusComponent theme={theme} num={'08'} title={'Happy hours'}/>
-                    <BonusComponent theme={theme} num={'09'} title={'Изучение английского языка'}/>
-*/}
+                    {Object.entries(superObj).map(([key, value]) => (
+                        <BonusComponent onClick={() => handleClick(key)} num={key} title={value.title}
+                                        theme={theme}/>))}
                 </div>
 
             </div>

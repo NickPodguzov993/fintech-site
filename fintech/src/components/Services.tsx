@@ -1,5 +1,5 @@
 import search from '../../public/images/search.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 const Services = ({theme}:ThemeType) => {
     return (

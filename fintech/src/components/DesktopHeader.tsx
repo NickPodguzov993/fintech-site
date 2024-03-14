@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
-import logo from '../../../public/images/Logo.svg'
-import arrowRight from '../../../public/images/arrowRight.svg'
-import React from "react";
+import arrowRight from '../../public/images/arrowRight.svg'
+import Logo from "./svg/Logo";
 
 export type ThemeType = {
     theme: string
@@ -13,9 +12,9 @@ const DesktopHeader = ({theme,switchTheme}:ThemeType) => {
 
     return (
         <>
-            <div  className="w-[1440px] hidden sm:inline-flex h-20 p-4  bg-opacity-90 justify-between items-center">
+            <div  className={`${theme === 'light' ? "bg-white" : "bg-[#212121]"} w-[1440px] hidden sm:inline-flex h-20 p-4  bg-opacity-90 justify-between items-center fixed z-20`}>
                 <NavLink exact activeClassName="active" to="/">
-                    <img className='p-4' src={logo} alt="logo"/>
+                    <Logo theme={theme}/>
                 </NavLink>
                 <div className="h-12 justify-between items-center flex">
                     <div className="w-[110.74px] h-12 relative" />
@@ -34,10 +33,14 @@ const DesktopHeader = ({theme,switchTheme}:ThemeType) => {
 
                         </div>
                         <input onChange={switchTheme}  type="checkbox" id="toggle-btn" />
-                        <div className="toggle-container">
+                        {/*<div className="toggle-container">
                             <input onChange={switchTheme} type="checkbox" id="toggle-btn" />
                             <label htmlFor="toggle-btn" className="toggle-label"></label>
-                        </div>
+                        </div>*/}
+                        <label className="switch">
+                            <input onChange={switchTheme} type="checkbox" />
+                                <span className="slider round"></span>
+                        </label>
                         <div className="w-[243px] h-10 self-stretch pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
                             <div className="text-white text-base font-bold font-['Raleway'] leading-relaxed">Отправить резюме</div>
                             <div className="w-9 h-9 p-2 bg-white rounded-[100px] justify-center items-center gap-3 flex">

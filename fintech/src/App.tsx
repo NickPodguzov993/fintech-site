@@ -5,7 +5,7 @@ import Contacts from "./components/Contacts";
 import Policies from "./components/Policies";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import DesktopHeader from "./components/Wrapper/DesktopHeader";
+import DesktopHeader from "./components/DesktopHeader";
 import {useState} from "react";
 function App() {
     const [theme, setTheme]= useState('light')

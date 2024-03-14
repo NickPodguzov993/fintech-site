@@ -1,7 +1,7 @@
 import logo from '../../../fintech/public/images/Logo.svg'
 import bigLogo from '../../../fintech/public/images/fintechblacktext.svg'
 import arrow from '../../../fintech/public/images/arrowBack.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 const Footer = ({theme}:ThemeType) => {
     return (

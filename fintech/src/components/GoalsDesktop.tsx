@@ -5,7 +5,7 @@ import goals3 from '../../../fintech/public/images/goals3.png'
 import rocket from '../../../fintech/public/images/rocket.svg'
 import lighting from '../../../fintech/public/images/lightning.svg'
 import star from '../../../fintech/public/images/star.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 const GoalsDesktop = ({theme}: ThemeType) => {
     const [show1, setShow1] = useState(false)

@@ -3,7 +3,7 @@ import HrPoliticsComponent from "./HrPoliticsComponent";
 import cake from '../../public/images/cake.svg'
 import loyality from '../../public/images/loyalty.svg'
 import education from '../../public/images/education.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 
 const OurHrPolitics = ({theme}:ThemeType) => {

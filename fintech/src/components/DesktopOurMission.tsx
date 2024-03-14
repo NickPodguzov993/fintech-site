@@ -1,5 +1,5 @@
 import search from '../../public/images/bigSearsh.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 const DesktopOurMission = ({theme}: ThemeType) => {
     return (

@@ -1,5 +1,5 @@
 import hh from '../../public/images/hh-red-large.svg'
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
 
 const OurTeam = ({theme}:ThemeType) => {
     return (

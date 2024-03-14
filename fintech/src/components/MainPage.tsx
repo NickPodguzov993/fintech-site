@@ -15,7 +15,8 @@ import BonusesDesktop from "./BonusesDesktop";
 import DesktopOurMission from "./DesktopOurMission";
 import ImagesSlider from "./ImagesSlider";
 import {ContactForm} from "./ContactForm";
-import {ThemeType} from "./Wrapper/DesktopHeader";
+import {ThemeType} from "./DesktopHeader";
+import MainFigure from "./svg/MainFigure";
 
 
 const MainPage = ({theme}: ThemeType) => {
@@ -24,7 +25,8 @@ const MainPage = ({theme}: ThemeType) => {
             className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] '>
             <div className='hidden sm:flex  w-[1400px]'>
 
-                <img src={figure} className='w-[400px]' alt=""/>
+               {/* <img src={figure} className='w-[400px]' alt=""/>*/}
+                <MainFigure theme={theme}/>
                 <h1 className='hidden sm:flex'>
                     <div className=" inline-flex grow shrink basis-0 flex-col justify-center items-end w-full">
                         <div className="self-stretch"><span
@@ -68,7 +70,7 @@ const MainPage = ({theme}: ThemeType) => {
             <ImagesSlider theme={theme}/>
             <Maps/>
             <Form/>
-            <ContactForm/>
+
 
 
         </div>
