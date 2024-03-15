@@ -6,6 +6,9 @@ import rocket from '../../../fintech/public/images/rocket.svg'
 import lighting from '../../../fintech/public/images/lightning.svg'
 import star from '../../../fintech/public/images/star.svg'
 import {ThemeType} from "./DesktopHeader";
+import StarSvg from "./svg/StarSvg";
+import LightSvg from "./svg/LightSvg";
+import RocketSvg from "./svg/RocketSvg";
 
 const GoalsDesktop = ({theme}: ThemeType) => {
     const [show1, setShow1] = useState(false)
@@ -23,13 +26,17 @@ const GoalsDesktop = ({theme}: ThemeType) => {
                 <div className="self-stretch h-[419px] flex-col justify-start items-center gap-px flex">
                     <div onMouseEnter={() => setShow1(!show1)}
                          onMouseLeave={() => setShow1(!show1)}
-                         className={` hover:text-rose-600 ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#212121]'} self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex`}>
-                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex"><img
-                            src={star} className='w-[30px]'/></div>
-                        <span
-                            className={`hover:text-rose-600 ${theme === 'light' ? 'text-[#1B1B1B]' : 'text-white'} grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 `}
+                         className={`text-[grey] hover:text-rose-600 ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#212121]'} 
+                         self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex fill-[grey]  hover:fill-rose-600`}>
+                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex ">
+                           {/* <img
+                            src={star} className='w-[30px]'/>*/}
+                        <StarSvg/>
+                        </div>
+                        <div
+                            className={` grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 `}
                             >Качество
-                        </span>
+                        </div>
                         {show1 && <div
                             className="absolute left-[600px] w-[640px] h-[160px]  rounded-[40px] shadow justify-center items-center flex"
                             style={{backgroundColor: theme === 'light' ? 'white' : 'black'}}>
@@ -46,12 +53,16 @@ const GoalsDesktop = ({theme}: ThemeType) => {
                     </div>
                     <div onMouseEnter={() => setShow2(!show2)}
                          onMouseLeave={() => setShow2(!show2)}
-                         className="self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex hover:text-rose-600"
-                         style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
-                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex"><img
-                            src={lighting} className='w-[30px]'/></div>
+                         className={`text-[grey] hover:text-rose-600 ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#212121]'} 
+                         self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex fill-[grey]  hover:fill-rose-600`}>
+                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex ">
+                            {/* <img
+                            src={star} className='w-[30px]'/>*/}
+                            <LightSvg/>
+                        </div>
                         <div
-                            className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-white'} grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 hover:text-rose-600`}>Риски
+                            className={` grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 `}
+                        >Риски
                         </div>
                         {show2 && <div
                             className="absolute left-[600px] w-[640px] h-[160px]  rounded-[40px] shadow justify-center items-center flex"
@@ -61,20 +72,24 @@ const GoalsDesktop = ({theme}: ThemeType) => {
                             <div className="grow shrink basis-0 h-40 p-8 justify-center items-center gap-2.5 flex">
                                 <div
                                     className="grow shrink basis-0 text-zinc-900 text-base font-medium font-['Raleway'] leading-normal"
-                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Минимизация всех видов
-                                    рисков проектов
+                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Высокое
+                                    качество сопровождения и взаимодействия с проектами и их подразделениями
                                 </div>
                             </div>
                         </div>}
                     </div>
                     <div onMouseEnter={() => setShow3(!show3)}
                          onMouseLeave={() => setShow3(!show3)}
-                         className="self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex hover:text-rose-600"
-                         style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
-                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex"><img
-                            src={rocket} className='w-[30px]'/></div>
+                         className={`text-[grey] hover:text-rose-600 ${theme === 'light' ? 'bg-[#F5F5F5]' : 'bg-[#212121]'} 
+                         self-stretch px-16 py-8  rounded-[40px] justify-start items-center gap-8 inline-flex fill-[grey]  hover:fill-rose-600`}>
+                        <div className="w-16 h-12 px-1 pt-1 pb-[5.75px] justify-center items-center flex ">
+                            {/* <img
+                            src={star} className='w-[30px]'/>*/}
+                            <RocketSvg/>
+                        </div>
                         <div
-                            className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-white'} grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 hover:text-rose-600`}>Развитие
+                            className={` grow shrink basis-0  text-[64px] font-medium font-['Raleway'] relative text-opacity-50 `}
+                        >Развитие
                         </div>
                         {show3 && <div
                             className="absolute left-[600px] w-[640px] h-[160px]  rounded-[40px] shadow justify-center items-center flex"
@@ -84,9 +99,8 @@ const GoalsDesktop = ({theme}: ThemeType) => {
                             <div className="grow shrink basis-0 h-40 p-8 justify-center items-center gap-2.5 flex">
                                 <div
                                     className="grow shrink basis-0 text-zinc-900 text-base font-medium font-['Raleway'] leading-normal"
-                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>
-                                    Развитие компетенций в профессиональных направлениях и рост экспертизы УК в В2В и
-                                    В2С сферах
+                                    style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Высокое
+                                    качество сопровождения и взаимодействия с проектами и их подразделениями
                                 </div>
                             </div>
                         </div>}

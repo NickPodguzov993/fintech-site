@@ -22,8 +22,8 @@ const HrPoliticsComponent = (props:HrPoliticsComponentType) => {
             <div
                 className="self-stretch grow shrink basis-0 p-8 rounded-bl-[40px] rounded-br-[40px] flex-col justify-between items-end flex ">
                 <div
-                    className={`${props.theme === 'light' ? 'text-[#1B1B1B]' : 'text-[white]'} self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed`}
-                   >{props.description}
+                    className={` self-stretch text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed`}
+                    style={{color: props.theme === 'light' ? '#1B1B1B' : 'white'}}>{props.description}
                 </div>
                 <div className={`${props.theme === 'light' ? 'text-[#1B1B1B]' : 'text-[white]'} p-4 rounded-[20px] justify-start items-end gap-[26px] inline-flex`}>
                     <div className={`${props.theme === 'light' ? 'text-[#1B1B1B]' : 'text-[white]'} w-12 h-12 relative`}
