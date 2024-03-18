@@ -3,7 +3,7 @@ import Maps from "./Maps";
 
 const Contacts = () => {
     return (
-        <div className='hidden sm:block'>
+        <div className='hidden sm:block mt-[160px] w-[1400px]'>
             <div className="w-[1400px] h-[226px] justify-start items-center gap-8 inline-flex">
                 <div className="grow shrink basis-0 text-zinc-900 text-8xl font-medium font-['Raleway']">Наши контакты</div>
                 <div className="grow shrink basis-0 text-zinc-900 text-xl font-medium font-['Raleway'] leading-[30px]">We appreciate your interest in reaching out to us. Whether you have a question, feedback, or want to explore potential collaborations, we're here to assist you. Our team is committed to providing exceptional customer service and building long-lasting relationships with our valued clients.</div>

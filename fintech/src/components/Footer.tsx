@@ -3,6 +3,7 @@ import bigLogo from '../../../fintech/public/images/fintechblacktext.svg'
 import arrow from '../../../fintech/public/images/arrowBack.svg'
 import {ThemeType} from "./DesktopHeader";
 import BigLogo from "./svg/BigLogo";
+import {NavLink} from "react-router-dom";
 
 const Footer = ({theme}:ThemeType) => {
     return (
@@ -23,15 +24,16 @@ const Footer = ({theme}:ThemeType) => {
                         </div>
                         <div
                             className="self-stretch h-12 px-4 rounded-[50px] justify-start items-center gap-2 inline-flex">
-                            <div
-                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты
-                            </div>
+                            <NavLink  to="/contacts">
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}
+                                >Контакты</div>
+                            </NavLink>
                         </div>
                         <div
                             className="self-stretch h-12 px-4 rounded-[50px] justify-start items-center gap-2 inline-flex">
-                            <div
-                                className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы
-                            </div>
+                            <NavLink  to="/policies">
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}>Документы</div>
+                            </NavLink>
                         </div>
                     </div>
                     <div
@@ -54,19 +56,27 @@ const Footer = ({theme}:ThemeType) => {
                     <div className="w-[195px] self-stretch text-zinc-900 text-base font-medium font-['Mulish']"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>FinTech<br/>© 2024 All rights reserved </div>
                     <div className="justify-start items-start flex">
                         <div className="w-[97px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Главная</div>
+                            <NavLink  to="/">
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}
+                                >Главная</div>
+                            </NavLink>
                         </div>
                         <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты</div>
+                            <NavLink  to="/contacts">
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}
+                                >Контакты</div>
+                            </NavLink>
                         </div>
                         <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed"  style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы</div>
+                            <NavLink  to="/policies">
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}>Документы</div>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="w-[230px] pl-8 pr-1 bg-rose-600 rounded-[100px] justify-start items-center gap-4 flex">
                         <div className="text-white text-base font-bold font-['Raleway'] leading-relaxed">Связаться с нами</div>
                         <div className="w-10 h-10 p-2 bg-white rounded-[100px] justify-center items-center gap-2.5 flex">
-                            <div className="w-6 h-6 relative origin-top-left -rotate-180" ></div>
+                            <div className="w-6 h-6 relative origin-top-left " ><img src={arrow}/></div>
                         </div>
                     </div>
                 </div>

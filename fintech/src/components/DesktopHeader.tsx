@@ -21,22 +21,17 @@ const DesktopHeader = ({theme,switchTheme}:ThemeType) => {
                     <div className="justify-start items-start gap-4 flex">
                         <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
                             <NavLink  to="/contacts">
-                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
-                                     style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты</div>
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}
+                                     >Контакты</div>
                             </NavLink>
                         </div>
                         <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
                             <NavLink  to="/policies">
-                                <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
-                                     style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы</div>
+                                <div className={`${theme === 'light' ? 'text-[#1B1B1B]' : 'text-[#fff]'} text-zinc-900 text-base font-bold font-['Raleway'] hover:text-rose-600 leading-relaxed pt-2`}>Документы</div>
                             </NavLink>
 
                         </div>
                         <input onChange={switchTheme}  type="checkbox" id="toggle-btn" />
-                        {/*<div className="toggle-container">
-                            <input onChange={switchTheme} type="checkbox" id="toggle-btn" />
-                            <label htmlFor="toggle-btn" className="toggle-label"></label>
-                        </div>*/}
                         <label className="switch">
                             <input onChange={switchTheme} type="checkbox" />
                                 <span className="slider round"></span>
