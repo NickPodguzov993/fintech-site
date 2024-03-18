@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://NickPodguzov993.github.io/fintech-site",
   "proxy": "http://localhost:8006",
   "scripts": {
     "dev": "vite",
