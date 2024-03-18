@@ -1,10 +1,5 @@
+import {ConfigType} from "./BonusesDesktop";
 
-
-export type ConfigType = {
-    title: string,
-    description: string
-    img: string
-}
 
 type BonusDescriptionType = {
     config: ConfigType

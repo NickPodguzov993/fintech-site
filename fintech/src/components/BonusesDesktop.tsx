@@ -1,73 +1,81 @@
-import  {useEffect, useState} from 'react';
+import { useEffect, useState} from 'react';
 import heart from '../../public/images/heart.svg'
 import BonusComponent from "./BonusComponent";
 import {ThemeType} from "./DesktopHeader";
 import BonusDescription from "./BonusDescription";
-import dms from '../../public/images/dms.jpg'
-import ball from '../../public/images/ball.png'
-import education from '../../public/images/education.jpg'
-import gift from '../../public/images/gift.jpg'
-import events from '../../public/images/events.jpg'
-import save from '../../public/images/save.jpg'
-import help from '../../public/images/help.jpg'
-import dinners from '../../public/images/dinners.jpg'
-import learnEnglish from '../../public/images/learnEnglish.jpg'
+import Dms from '../../public/images/dms.jpg'
+import Ball from '../../public/images/ball.png'
+import Education from '../../public/images/education.jpg'
+import Gift from '../../public/images/gift.jpg'
+import Events from '../../public/images/events.jpg'
+import Save from '../../public/images/save.jpg'
+import Help from '../../public/images/help.jpg'
+import Dinners from '../../public/images/dinners.jpg'
+import LearnEnglish from '../../public/images/learnEnglish.jpg'
 
-type SuperObjType = {"01": {img: string, description: string, title: string}, "02": {img: string, description: string, title: string}, "03": {img: string, description: string, title: string}, "04": {img: string, description: string, title: string}, "05": {img: string, description: string, title: string}, "06": {img: string, description: string, title: string}, "07": {img: string, description: string, title: string}, "08": {img: string, description: string, title: string}, "09": {img: string, description: string, title: string}}
+type SuperObjType = {
+    [key: string]: ConfigType
+    }
+
+export type ConfigType = {
+    title: string,
+    description: string
+    img: string
+}
 
 const superObj: SuperObjType
     = {
     '01': {
         title: 'Медицина и ДМС',
         description: 'У нас действуют специальные условия ДМС для работников',
-        img: dms
+        img: Dms
 
     },
     '02': {
         title: 'Кафетерий бенефитов',
         description: 'Возмещение затрат на посещение спортивных секций или клубов',
-        img: ball
+        img: Ball
     },
     '03': {
         title: 'Обучение и развитие',
         description: 'Мы предоставляем нашим сотрудникам возможность проходить различные тренинги и курсы, которые помогают им улучшить свои профессиональные навыки',
-        img: education
+        img: Education
     },
     '04': {
         title: 'Подарки сотрудникам',
         description: 'День рождения сотрудника, семейные торжества (день рождения ребенка, свадьба, подарок ко дню ухода в отпуск по беременности и родам - Baby-box',
-        img: gift
+        img: Gift
     },
     '05': {
         title: 'Корпоративные мероприятия',
         description: 'День защитника Отечества, Международный женский день, День рождения компании, Family day, Children\'s day, Празднование Нового года',
-        img: events
+        img: Events
     },
     '06': {
         title: 'Страхование',
         description: 'Финансовая поддержка с банком-партнером',
-        img: save
+        img: Save
     },
     '07': {
         title: 'Материальная помощь',
         description: 'В жизни могут происходить самые разные обстоятельства, мы это прекрасно понимаем и потому мы готовы помочь сотрудникам, которые оказались в затруднительной ситуации',
-        img: help
+        img: Help
     },
     '08': {
         title: 'Happy hours',
         description: 'Каждый четверг у нас «Happy hours». Организовываем вкусный обед или перекус для всех сотрудников Компании.',
-        img: dinners
+        img: Dinners
     },
     '09': {
         title: 'Изучение английского языка',
         description: 'Корпоративный английский. Организовываем занятия несколько раз в неделю.',
-        img: learnEnglish
+        img: LearnEnglish
     },
 }
 
 
 const BonusesDesktop = ({theme}: ThemeType) => {
-    const [index, setIndex] = useState('01')
+    const [index, setIndex] = useState<string>('01')
     const [isClicked, setIsClicked] = useState(false)
 
     useEffect(() => {
