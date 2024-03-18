@@ -1,6 +1,5 @@
-import React, {useState} from "react";
+import  {useState} from "react";
 import redSearch from '../../public/images/location.svg'
-import location1 from '../../public/images/location1.jpg'
 import location2 from '../../public/images/location2.jpg'
 import location3 from '../../public/images/location3.jpg'
 import location4 from '../../public/images/location4.jpg'
@@ -105,7 +104,7 @@ const OurLocation = () => {
 
     return (
         <div className="fc gap-8 justify-start items-start w-full sm:hidden">
-            <div className='flex justify-between  p-4'>
+            <div className='hidden sm:flex justify-between  p-4'>
                 <h2 className=' text-[32px] '>Мы в Ростове</h2>
                 <img src={redSearch} />
             </div>

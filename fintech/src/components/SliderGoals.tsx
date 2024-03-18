@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import goals1 from '../../../fintech/public/images/goals1.png'
 import goals2 from '../../../fintech/public/images/goals2.png'
 import goals3 from '../../../fintech/public/images/goals3.png'
@@ -9,43 +9,43 @@ const SliderGoals = () => {
     const initialData = [
         {
             id: 1,
-            block:  <div class="w-[300px] h-[320px]  bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
-                <div class="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
-                    <div class="self-stretch justify-start items-center gap-4 inline-flex">
-                        <div class="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
-                        <div class="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Качество</div>
+            block:  <div className="w-[300px] h-[320px]  bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
+                <div className="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
+                    <div className="self-stretch justify-start items-center gap-4 inline-flex">
+                        <div className="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
+                        <div className="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Качество</div>
                     </div>
-                    <div class="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Высокое качество сопровождения и взаимодействия с проектами и их подразделениями</div>
+                    <div className="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Высокое качество сопровождения и взаимодействия с проектами и их подразделениями</div>
                 </div>
-                <img class="self-stretch h-40  rounded-[30px]" src={goals1} />
+                <img className="self-stretch h-40  rounded-[30px]" src={goals1} />
             </div>
 
         },
         {
             id: 2,
-            block:  <div class="w-[300px] h-[320px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
-                <div class="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
-                    <div class="self-stretch justify-start items-center gap-4 inline-flex">
-                        <div class="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
-                        <div class="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Риски</div>
+            block:  <div className="w-[300px] h-[320px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
+                <div className="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
+                    <div className="self-stretch justify-start items-center gap-4 inline-flex">
+                        <div className="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
+                        <div className="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Риски</div>
                     </div>
-                    <div class="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Минимизация всех видов рисков проектов</div>
+                    <div className="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Минимизация всех видов рисков проектов</div>
                 </div>
-                <img class="self-stretch h-40  rounded-[30px]" src={goals2} />
+                <img className="self-stretch h-40  rounded-[30px]" src={goals2} />
             </div>
 
         },
         {
             id: 3,
-            block:  <div class="w-[300px] h-[250px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
-                <div class="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
-                    <div class="self-stretch justify-start items-center gap-4 inline-flex">
-                        <div class="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
-                        <div class="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Развитие</div>
+            block:  <div className="w-[300px] h-[250px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
+                <div className="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
+                    <div className="self-stretch justify-start items-center gap-4 inline-flex">
+                        <div className="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex"></div>
+                        <div className="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Развитие</div>
                     </div>
-                    <div class="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Развитие компетенций в профессиональных направлениях и рост экспертизы УК в В2В и В2С сферах</div>
+                    <div className="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">Развитие компетенций в профессиональных направлениях и рост экспертизы УК в В2В и В2С сферах</div>
                 </div>
-                <img class="self-stretch h-40 rounded-[30px]" src={goals3} />
+                <img className="self-stretch h-40 rounded-[30px]" src={goals3} />
             </div>
 
         },

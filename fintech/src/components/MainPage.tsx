@@ -8,7 +8,6 @@ import OurHrPolitics from "./OurHrPolitics";
 import OurBonuses from "./OurBonuses";
 import OurLocation from "./OurLocation";
 import Maps from "./Maps";
-import Form from "./Form";
 import GoalsDesktop from "./GoalsDesktop";
 import BonusesDesktop from "./BonusesDesktop";
 import DesktopOurMission from "./DesktopOurMission";
@@ -20,8 +19,8 @@ import MainFigure from "./svg/MainFigure";
 const MainPage = ({theme}: ThemeType) => {
     return (
         <div
-            className='overflow-y-hidden w-full sm:pt-[87.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] '>
-            <div className='hidden sm:flex  w-[1400px]'>
+            className='overflow-y-hidden w-full sm:pt-[150.5px] pt-[120px] flex flex-col justify-start items-center sm:gap-40 gap-[120px] '>
+            <div className='hidden sm:flex  w-[1400px] '>
                 <div className='mt-[20px]'> <MainFigure theme={theme}/></div>
 
                 <h1 className='hidden sm:flex'>
@@ -66,7 +65,6 @@ const MainPage = ({theme}: ThemeType) => {
             <OurLocation/>
             <ImagesSlider theme={theme}/>
             <Maps/>
-            <Form/>
 
 
 

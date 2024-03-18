@@ -1,15 +1,16 @@
+/*
 import  {useState} from 'react';
 import {Link} from "react-router-dom";
 //import AOS from 'aos';
 import Modal from "../../src/components/Modal";
 
 const Form = () => {
-    /*useEffect(() => {
+    /!*useEffect(() => {
         AOS.init({
             disable: false,
             once: true,
         });
-    }, []);*/
+    }, []);*!/
 
     const [isOpen, setIsOpen] = useState(false);
     const openThanksModal = () => {
@@ -133,4 +134,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default Form;*/

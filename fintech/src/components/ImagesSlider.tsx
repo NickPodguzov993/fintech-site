@@ -45,8 +45,8 @@ const ImagesSlider = ({theme}:ThemeType) => {
 
     return (
         <div>
-            <div className="w-[552px] h-24 justify-start items-center gap-8 inline-flex mb-8">
-                <div className="text-zinc-900 text-[64px] font-medium font-['Raleway']" style={{color: theme === 'light' ? '#FF1744' : 'white'}}>Мы в Ростове</div>
+            <div className="w-[552px] h-24 justify-start items-center gap-8 hidden sm:inline-flex mb-8">
+                <div className=" text-zinc-900 text-[64px] font-medium font-['Raleway']" style={{color: theme === 'light' ? '#FF1744' : 'white'}}>Мы в Ростове</div>
                 <div className="p-6 bg-rose-600 rounded-[30px] justify-start items-center gap-2.5 flex">
                     <div className="w-12 h-12 relative" ><img src={loc}/></div>
                 </div>

@@ -57,15 +57,15 @@ const SliderAbility = () => {
         },
         {
             id: 4,
-            block: <div class="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] bg-neutral-800 rounded-[35px] flex-col justify-center
+            block: <div className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] bg-neutral-800 rounded-[35px] flex-col justify-center
             items-start gap-[43px] inline-flex bg-no-repeat
                          bg-bottom bg-[url('/images/rings.svg')]">
-                <div class="self-stretch p-7 justify-center items-center gap-3.5 inline-flex">
-                    <div class="grow shrink basis-0 text-white text-[27px] font-medium font-['Raleway']">Оптимизируем
+                <div className="self-stretch p-7 justify-center items-center gap-3.5 inline-flex">
+                    <div className="grow shrink basis-0 text-white text-[27px] font-medium font-['Raleway']">Оптимизируем
                         бизнес-процессы
                     </div>
                 </div>
-                <div class="w-[300px] h-[150px] sm:w-[350px] sm:h-[350px] relative">
+                <div className="w-[300px] h-[150px] sm:w-[350px] sm:h-[350px] relative">
 
                 </div>
             </div>

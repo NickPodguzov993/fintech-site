@@ -1,9 +1,5 @@
 import  {useState} from "react";
-import goals1 from '../../../fintech/public/images/goals1.png'
-import goals2 from '../../../fintech/public/images/goals2.png'
-import goals3 from '../../../fintech/public/images/goals3.png'
 import redSearch from '../../public/images/redSearch.svg'
-import union from '../../public/images/Union.svg'
 
 
 const OurMission = () => {

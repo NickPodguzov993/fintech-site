@@ -6,7 +6,7 @@ const Modal = ({onClose}: { onClose: () => void }) => {
                 <div className="relative w-full  fc gap-6">
                     <div className="fr justify-center relative">
                         <h3 className="text-[32px] sm:text-5xl font-medium">Thank you</h3>
-                        <svg onClick={() => onClose(false)}
+                        <svg onClick={ onClose}
                              className="cursor-pointer absolute right-[10px] sm:top-[5px] top-[-5px]"
                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                              viewBox="0 0 24 24">

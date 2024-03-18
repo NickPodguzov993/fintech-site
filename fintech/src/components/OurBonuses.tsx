@@ -126,7 +126,7 @@ const OurBonuses = () => {
     };
 
     return (
-        <div className="fc gap-8 justify-start items-start w-full sm:hidden">
+        <div className="sm:hidden fc gap-8 justify-start items-start w-full ">
             <div className='flex p-4'>
                 <h2 className=' text-[32px] '>Наши бонусы</h2>
                 <img src={redSearch} />
@@ -142,7 +142,6 @@ const OurBonuses = () => {
 
                                 <div onClick={openCard}>
                                     {c.block}
-                                    {open && <div>sdfsd</div>}
                                 </div>
                             </div>
                         </div>

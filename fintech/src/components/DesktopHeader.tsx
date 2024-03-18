@@ -12,21 +12,21 @@ const DesktopHeader = ({theme,switchTheme}:ThemeType) => {
 
     return (
         <>
-            <div  className={`${theme === 'light' ? "bg-white" : "bg-[#212121]"} w-[1440px] hidden sm:inline-flex h-20 p-4  bg-opacity-90 justify-between items-center fixed z-20`}>
-                <NavLink exact activeClassName="active" to="/">
+            <div  className={`${theme === 'light' ? "bg-white" : "bg-[#212121]"} w-[1440px] hidden sm:inline-flex h-20 p-4  bg-opacity-90 justify-between items-center fixed z-20 `}>
+                <NavLink  to="/">
                     <Logo theme={theme}/>
                 </NavLink>
                 <div className="h-12 justify-between items-center flex">
                     <div className="w-[110.74px] h-12 relative" />
                     <div className="justify-start items-start gap-4 flex">
                         <div className="w-[109px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <NavLink exact activeClassName="active" to="/contacts">
+                            <NavLink  to="/contacts">
                                 <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
                                      style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Контакты</div>
                             </NavLink>
                         </div>
                         <div className="w-[124px] px-4 rounded-[50px] justify-center items-center gap-2 flex">
-                            <NavLink exact activeClassName="active" to="/policies">
+                            <NavLink  to="/policies">
                                 <div className="text-zinc-900 text-base font-bold font-['Raleway'] leading-relaxed pt-2"
                                      style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Документы</div>
                             </NavLink>

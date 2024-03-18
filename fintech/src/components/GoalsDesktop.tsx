@@ -2,9 +2,6 @@ import {useState} from 'react';
 import goals1 from '../../../fintech/public/images/goals1.png'
 import goals2 from '../../../fintech/public/images/goals2.png'
 import goals3 from '../../../fintech/public/images/goals3.png'
-import rocket from '../../../fintech/public/images/rocket.svg'
-import lighting from '../../../fintech/public/images/lightning.svg'
-import star from '../../../fintech/public/images/star.svg'
 import {ThemeType} from "./DesktopHeader";
 import StarSvg from "./svg/StarSvg";
 import LightSvg from "./svg/LightSvg";

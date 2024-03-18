@@ -13,7 +13,10 @@ import help from '../../public/images/help.jpg'
 import dinners from '../../public/images/dinners.jpg'
 import learnEnglish from '../../public/images/learnEnglish.jpg'
 
-const superObj = {
+type SuperObjType = {"01": {img: string, description: string, title: string}, "02": {img: string, description: string, title: string}, "03": {img: string, description: string, title: string}, "04": {img: string, description: string, title: string}, "05": {img: string, description: string, title: string}, "06": {img: string, description: string, title: string}, "07": {img: string, description: string, title: string}, "08": {img: string, description: string, title: string}, "09": {img: string, description: string, title: string}}
+
+const superObj: SuperObjType
+    = {
     '01': {
         title: 'Медицина и ДМС',
         description: 'У нас действуют специальные условия ДМС для работников',
@@ -77,13 +80,13 @@ const BonusesDesktop = ({theme}: ThemeType) => {
 
                 setIndex(`0${Math.floor(Math.random() * (max - 1) + 1)}`)
 
-            }, 7000,)
+            }, 3000,)
 
             return () => clearInterval(interval)
         }
     }, [isClicked])
 
-    const handleClick = (key) => {
+    const handleClick = (key:string) => {
         setIndex(key)
         setIsClicked(true)
     }
@@ -108,7 +111,7 @@ const BonusesDesktop = ({theme}: ThemeType) => {
                 <BonusDescription config={superObj[index]} theme={theme}/>
                 <div className='flex flex-wrap w-[668px] ml-[720px] mt-[40px] '>
                     {Object.entries(superObj).map(([key, value]) => (
-                        <BonusComponent onClick={() => handleClick(key)} num={key} title={value.title}
+                        <BonusComponent onClick={() => handleClick(key)} num={key} isActive={index===key} title={value.title}
                                         theme={theme}/>))}
                 </div>
 
