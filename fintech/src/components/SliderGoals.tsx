@@ -2,6 +2,7 @@ import {useState} from "react";
 import goals1 from '../../../fintech/public/images/goals1.png'
 import goals2 from '../../../fintech/public/images/goals2.png'
 import goals3 from '../../../fintech/public/images/goals3.png'
+import StarSvg from "./svg/StarSvg";
 
 
 const SliderGoals = () => {
@@ -12,7 +13,7 @@ const SliderGoals = () => {
             block:  <div className="w-[300px] h-[332px] bg-neutral-100 rounded-[30px] flex-col justify-start items-start inline-flex">
                 <div className="self-stretch grow shrink basis-0 p-4 flex-col justify-start items-center gap-4 flex">
                     <div className="self-stretch justify-start items-center gap-4 inline-flex">
-                        <div className="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex" />
+                        <div className="w-6 h-6 px-0.5 pt-0.5 pb-[2.88px] justify-center items-center flex" ><StarSvg/></div>
                         <div className="grow shrink basis-0 text-rose-600 text-2xl font-medium font-['Raleway'] leading-9">Качество</div>
                     </div>
                     <div className="self-stretch text-zinc-900 text-sm font-medium font-['Raleway'] leading-snug">
