@@ -45,7 +45,7 @@ const MainPage = ({theme}: ThemeType) => {
 
 
             </div>
-            <h1>
+            <h1 className='sm:hidden'>
                 <div className="w-[328px] h-72 flex-col justify-center items-end gap-0.5 inline-flex">
                     <div className="self-stretch"><span className="text-zinc-900 text-[40px] font-medium font-['Raleway']">Оказываем </span>
                         <span className="text-rose-600 text-[40px] font-medium font-['Raleway']">спектр услуг </span>

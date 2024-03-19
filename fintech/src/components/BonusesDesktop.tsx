@@ -23,7 +23,7 @@ export type ConfigType = {
     img: string
 }
 
-const superObj: SuperObjType
+export const superObj: SuperObjType
     = {
     '01': {
         title: 'Медицина и ДМС',
@@ -117,7 +117,7 @@ const BonusesDesktop = ({theme}: ThemeType) => {
             </div>
             <div className='flex'>
                 <BonusDescription config={superObj[index]} theme={theme}/>
-                <div className='flex flex-wrap w-[668px] ml-[720px] mt-[40px] '>
+                <div className='sm:flex sm:flex-wrap sm:w-[668px] sm:ml-[720px] sm:mt-[40px] '>
                     {Object.entries(superObj).map(([key, value]) => (
                         <BonusComponent onClick={() => handleClick(key)} num={key} isActive={index===key} title={value.title}
                                         theme={theme}/>))}
