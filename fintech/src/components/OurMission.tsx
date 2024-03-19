@@ -20,7 +20,7 @@ const OurMission = () => {
             id: 2,
             block: <div className="w-[300px] h-[480px] flex-col justify-start gap-1 items-center  inline-flex ">
                 <div
-                    className="self-stretch grow shrink basis-0 p-8 bg-neutral-100 rounded-[40px] z-40 flex-col justify-start items-start gap-2 flex">
+                    className="self-stretch grow shrink basis-0 p-8 bg-neutral-100 rounded-[40px]  flex-col justify-start items-start gap-2 flex">
                     <div
                         className="self-stretch text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Проактивность
                     </div>
@@ -29,7 +29,7 @@ const OurMission = () => {
                     </div>
                 </div>
                 <div
-                    className="self-stretch grow shrink basis-0 p-8 bg-neutral-100 z-40 rounded-[40px] flex-col justify-start items-start gap-2 flex">
+                    className="self-stretch grow shrink basis-0 p-8 bg-neutral-100  rounded-[40px] flex-col justify-start items-start gap-2 flex">
                     <div
                         className="self-stretch text-zinc-900 text-2xl font-medium font-['Raleway'] leading-9">Поощрение
                         инициатив
@@ -107,10 +107,10 @@ const OurMission = () => {
             <div className="fc sm:flex-row-reverse sm:justify-between sm:w-full px-4 gap-4 justify-start items-start">
             </div>
             <div className=" w-full  justify-start items-start inline-flex flex-col overflow-y-hidden">
-                <div className="flex flex-row  px-4">
+                <div className="flex flex-row  px-4 mt-[40px]">
                     {cards.map(c => (
                         <div onTouchStart={() => touchStart(c.id)} onTouchEnd={() => touchEnd(c.id)}
-                             className="w-[300px]  h-[480px]  flex-col justify-between items-start inline-flex">
+                             className="w-[300px]  h-[480px]  flex-col justify-between ml-2 items-start inline-flex">
 
                             <div>
                                 {c.block}

@@ -4,7 +4,7 @@ import {ThemeType} from "./DesktopHeader";
 const Services = ({theme}:ThemeType) => {
     return (
         <div>
-            <div className=' mb-[120px] sm:hidden'>
+            <div className='sm:hidden'>
                 <div >
                     <div className='flex justify-between p-4 '><h2 className='text-[32px]' style={{color: theme === 'light' ? '#1B1B1B' : 'white'}}>Спектр услуг</h2>
                         <img src={search} alt=""/></div>

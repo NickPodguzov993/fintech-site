@@ -1,4 +1,3 @@
-import style from './MainPage.module.css'
 import SliderAbility from "./SliderAbility";
 import Services from "./Services";
 import SliderGoals from "./SliderGoals";
@@ -46,9 +45,20 @@ const MainPage = ({theme}: ThemeType) => {
 
 
             </div>
-            <h1 className='p-8 text-[40px] leading-[46px] m-auto mt-[52px] sm:hidden'>Оказываем <br/> <span
-                className={style.span}>спектр услуг </span>
-                в<br/> сфере<br/> сопровождения<br/> деятельности<br/> <span className={style.span}> it-компаний</span>
+            <h1>
+                <div className="w-[328px] h-72 flex-col justify-center items-end gap-0.5 inline-flex">
+                    <div className="self-stretch"><span className="text-zinc-900 text-[40px] font-medium font-['Raleway']">Оказываем </span>
+                        <span className="text-rose-600 text-[40px] font-medium font-['Raleway']">спектр услуг </span>
+                        <span className="text-zinc-900 text-[40px] font-medium font-['Raleway']">в </span></div>
+                    <div className="px-4 bg-neutral-100 rounded-[30px] justify-end items-center inline-flex">
+                        <div className="text-zinc-900 text-[40px] font-medium font-['Raleway']">сфере</div>
+                    </div>
+                    <div className="px-4 bg-neutral-100 rounded-[30px] justify-start items-start inline-flex">
+                        <div className="w-[312px] text-zinc-900 text-[40px] font-medium font-['Raleway']">сопровождения</div>
+                    </div>
+                    <div className="self-stretch"><span className="text-zinc-900 text-[40px] font-medium font-['Raleway']">деятельности<br/>
+                    </span><span className="text-rose-600 text-[40px] font-medium font-['Raleway']">it-компаний</span></div>
+                </div>
             </h1>
 
 

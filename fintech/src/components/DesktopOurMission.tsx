@@ -1,5 +1,6 @@
-import search from '../../public/images/bigSearsh.svg'
+
 import {ThemeType} from "./DesktopHeader";
+import SearchSvg from "./svg/SearchSvg";
 
 const DesktopOurMission = ({theme}: ThemeType) => {
     return (
@@ -13,7 +14,7 @@ const DesktopOurMission = ({theme}: ThemeType) => {
                             </div>
                             <div className="p-6  rounded-[30px] justify-start items-center gap-2.5 flex"
                                  style={{backgroundColor: theme === 'light' ? '#F5F5F5' : '#212121'}}>
-                                <div className="w-12 h-12 relative"><img src={search}/></div>
+                                <div className="w-12 h-12 relative"><SearchSvg theme={theme}/></div>
                             </div>
                         </div>
                         <div

@@ -74,6 +74,13 @@ svg {
     margin-top: 8px;
 }
 
+@media screen and (max-width: 1024px) {
+    .switch {
+        margin-top: 8px;
+
+    }
+}
+
 /* Hide default HTML checkbox */
 .switch input {display:none;}
 
@@ -135,4 +142,7 @@ input:checked + .slider:before {
     bg-[top_5px_right_50px] ;
 
 }
+
+
+
 

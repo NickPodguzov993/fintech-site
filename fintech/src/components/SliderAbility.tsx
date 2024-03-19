@@ -21,7 +21,7 @@ const SliderAbility = () => {
                         <div
                             className="text-white text-[27.43px] font-medium font-['Raleway'] leading-[41.14px]">Задача
                         </div>
-                        <img className='absolute left-[270px]'  src={search}/>
+                        <img className='absolute left-[230px]  sm:left-[270px]'  src={search}/>
                     </div>
                 </div>
                 <div
